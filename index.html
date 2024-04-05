@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 70%;
+            margin: 0 auto;
+            thead {
+                th {
+                    text-align: start;
+                }
+            }
+        }
+
+        .player {
+            width: 100%;
+            position: fixed;
+            background-color: green;
+            padding: 20px;
+            bottom: 0px;
+        }
+        .anim {
+            width: 30px !important; 
+            height: 30px !important; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>Mini UZBEKfy</h1>
+    </center>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Название</th>
+                <th>Артист</th>
+                <th>Дата добавления</th>
+                <th>
+                    <img src="./clock.svg" alt="clock">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Название</td>
+                <td>Артист</td>
+                <td>добавления</td>
+                <td>
+                    <img src="./heart.svg" alt="like">
+                    <span>3:25</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <audio src="./mp3/18. Это любовь.mp3"></audio>
+    <div class="player" >
+        <button class="play">play</button>
+        <button class="pause">pause</button>
+    </div>
+    
+    <div class="brbr">
+        <center>
+        <button id="minus"><img src="./public/images/icons8-предыдущий-50 (1).png" alt=""></button>
+        <input type="range" id="seek_slider" min="0" value="0">
+        <button id="plus"><img src="./public/images/icons8-следующий-50.png" alt=""></button>    
+    </center>    
+</div>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="./index.js"></script>
+</body>
+
+</html>
